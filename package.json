@@ -23,9 +23,6 @@
     "tslint-config-standard": "^5.0.2",
     "typescript": "^2.3.4"
   },
-  "scripts": {
-    "start": "code-injector"
-  },
   "bin": "./bin/index.js",
   "author": "Ailun She",
   "license": "MIT"

@@ -8,11 +8,21 @@ code in memory or build files in production stage. These transformed codes are i
 babel plugins sometimes may be misleading and that's the reason why I choose gulp over webpack or babel to achieve the purpose of this library.
 
 ## Quick Start
+
 ```sh
 npm install code-injector -g
 
 code-injector # wait a moment brefore you do this
 ```
+
+#### Command
+  Usage: index [options]
+
+  Options:
+
+    -h, --help         output usage information
+    -V, --version      output the version number
+    -c, --config-path  config file, default path is generator.config.js
 
 ## Config File
 
@@ -65,6 +75,13 @@ so you could define the <b>code block</b> like this,
 
 /* inject:end */
 /* end-inject */
+```
+
+## Start Now
+Now you can run the command: 
+
+```sh
+code-injector
 ```
 
 ## TODO List
