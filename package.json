@@ -1,7 +1,7 @@
 {
   "name": "code-injector",
   "version": "0.0.2",
-  "description": "A lib make use of gulp to generator code to specified code block.",
+  "description": "A library make use of gulp to generator code to specified code block.",
   "main": "index.js",
   "keywords": [
     "gulp",
