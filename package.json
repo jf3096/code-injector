@@ -1,0 +1,32 @@
+{
+  "name": "code-injector",
+  "version": "0.0.1",
+  "description": "A lib make use of gulp to generator code to specified code block.",
+  "main": "index.js",
+  "keywords": [
+    "gulp",
+    "code generator",
+    "generate code"
+  ],
+  "dependencies": {
+    "camel-case": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-plumber": "^1.1.0",
+    "invariant": "^2.2.2",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/invariant": "^2.2.28",
+    "@types/node": "^7.0.22",
+    "tslint": "^5.3.2",
+    "tslint-config-standard": "^5.0.2",
+    "typescript": "^2.3.4"
+  },
+  "scripts": {
+    "start": "code-injector"
+  },
+  "bin": "./bin/index.js",
+  "author": "Ailun She",
+  "license": "MIT"
+}
