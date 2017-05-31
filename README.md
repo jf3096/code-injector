@@ -15,6 +15,7 @@ code-injector # wait a moment brefore you do this
 ```
 
 ## Config File
+
 Before you run the <b>code-injector</b> command, you will need to prepare a config file at the root of your project and 
 named it <b>generator.config.js</b>.
 
@@ -26,20 +27,20 @@ A few rules you need to code and understand in this file:
 * @type {[*]}
 */
 export function generatorStart() {
-    return `console.time()`;
+    return `console.time();`;
 }
 /**
 * a useful function that could be used to generator any code you want
 * @type {[*]}
 */
 export function generatorEnd() {
-    return `console.timeEnd()`;
+    return `console.timeEnd();`;
 }
 /**
 * required
 * the file you want to watch and compile
 */
-export const watchSrc = [`./haha.ts`];
+export const watchSrc = [`./test/index.js`];
 /**
 * default: generator
 * prefix used to indicate which function is going to be used
@@ -50,7 +51,7 @@ export const prefix = `generator`;
 
 ## Code Block
 
-The previous part has defined <b>generatorTest generatorDemo</b>. 
+The previous part has defined <b>generatorStart</b> and <b>generatorEnd</b>. 
 So `start` represents its function return value `console.time()`, 
 whereas
 `end` represents its function return value `console.endTime()`,
@@ -68,7 +69,7 @@ so you could define the <b>code block</b> like this,
 
 ## TODO List
 
-- [x] only compile the when the code block changed
+- [ ] only compile the when the code block changed
 
 ## License
 
