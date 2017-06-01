@@ -1,10 +1,10 @@
 # Code Injector
 
-A library used to generate code and inject them in target code block so that you could feel like make use of NodeJS in 
+This a library is used to generate code and inject them in target code block so that you could feel like make use of NodeJS in 
 browser side. 
 
-People nowadays use webpack more frequently than gulp. However, webpack, most of the time, makes use of babel to transform (compile)
-code in memory or build files in production stage. These transformed codes are invisible as we cannot see or use them directly. Therefore, 
+People nowadays use webpack more frequently than gulp. <b>However, webpack, most of the time, makes use of babel and transforms (compile)
+code in memory or build files in production stage. These transformed codes are invisible as we cannot see or use them directly.</b> Therefore, 
 babel plugins sometimes may be misleading and that's the reason why I choose gulp rather than webpack or babel to achieve the purpose of code injection.
 
 ## Quick Start
