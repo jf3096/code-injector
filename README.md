@@ -86,7 +86,7 @@ code-injector
 
 ## TODO List
 
-- [ ] only compile the when the code block changed
+- [ ] only compile when the code block changed rather than the entire file changed
 - [ ] remove the package dependency of gulp-inject
 
 ## License
