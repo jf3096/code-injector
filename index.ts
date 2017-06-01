@@ -5,6 +5,7 @@ import * as plumber from 'gulp-plumber';
 import camelCase = require('camel-case');
 import {isFunction, isNull, isReferenceType, isUndefined} from './src/utils/type';
 import * as invariant from 'invariant';
+import * as path from 'path';
 
 interface IGeneratorResults {
     [key: string]: string;
@@ -81,7 +82,7 @@ export default async function start(generatorConfig): Promise<void> {
          * 当前数据源直接使用当前文件即可
          * read:false只读模式, 提高加载速度
          */
-        const sources = gulp.src(`./index.js`, {read: false});
+        const sources = gulp.src(path.resolve(__dirname, `./index.js`), {read: false});
         /**
          * 指定修改的数据
          * @type {NodeJS.WritableStream}

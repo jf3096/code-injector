@@ -24,6 +24,7 @@ const plumber = require("gulp-plumber");
 const camelCase = require("camel-case");
 const type_1 = require("./src/utils/type");
 const invariant = require("invariant");
+const path = require("path");
 /**
  * 统一task名
  * @type {string}
@@ -84,7 +85,7 @@ function start(generatorConfig) {
              * 当前数据源直接使用当前文件即可
              * read:false只读模式, 提高加载速度
              */
-            const sources = gulp.src(`./index.js`, { read: false });
+            const sources = gulp.src(path.resolve(__dirname, `./index.js`), { read: false });
             /**
              * 指定修改的数据
              * @type {NodeJS.WritableStream}
