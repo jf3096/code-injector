@@ -10,7 +10,7 @@ babel plugins sometimes may be misleading and that's the reason why I choose gul
 ## Quick Start
 
 ```sh
-npm install code-injector -g
+npm install code-injector -g #use yarn if you want to
 
 code-injector # wait a moment brefore you do this
 ```
@@ -87,6 +87,7 @@ code-injector
 ## TODO List
 
 - [ ] only compile the when the code block changed
+- [ ] remove the package dependency of gulp-inject
 
 ## License
 
